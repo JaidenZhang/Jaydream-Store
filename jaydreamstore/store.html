@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Store | JaydreamStore</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<nav>
+
+    <div class="logo">
+
+        <img src="assets/logo.png">
+
+        <h2>JaydreamStore</h2>
+
+    </div>
+
+    <ul>
+
+        <li><a href="index.html">Home</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="#">Top Up</a></li>
+        <li><a href="#">About</a></li>
+
+    </ul>
+
+    <button onclick="window.location.href='dashboard.html'">
+
+        Dashboard
+
+    </button>
+
+</nav>
+
+<section class="store">
+
+    <h1>Store</h1>
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Cari produk..."
+            onkeyup="searchProduct()">
+
+    </div>
+
+    <div class="category-filter">
+
+        <button onclick="filterCategory('All')">Semua</button>
+
+        <button onclick="filterCategory('Preset')">Preset</button>
+
+        <button onclick="filterCategory('Premium')">Premium</button>
+
+        <button onclick="filterCategory('Top Up')">Top Up</button>
+
+    </div>
+
+    <div id="products" class="product-grid">
+
+    </div>
+
+</section>
+
+<footer>
+
+    <div class="copyright">
+
+        © 2026 JayDreamStore
+
+    </div>
+
+</footer>
+
+<script src="js/store.js"></script>
+
+</body>
+
+</html>
