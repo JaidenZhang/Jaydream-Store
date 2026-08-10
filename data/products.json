@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Gotoubun No Katachi - Edit",
+        "price": 10000,
+        "category": "Preset",
+        "image": "assets/products/presetgotoubunkatachi.jpeg",
+        "preview": "assets/previews/gotoubunnokatachi.mp4",
+        "file": "preset1.zip"
+
+    },
+    {
+        "id": 2,
+        "name": "CapCut Pro",
+        "price": 15000,
+        "category": "Premium",
+        "image": "assets/products/Capcutpro.jpg",
+        "preview": "",
+        "file": "preset1.zip"
+    },
+    {
+        "id": 3,
+        "name": "Alight Motion Premium/1 tahun",
+        "price": 5000,
+        "category": "Premium",
+        "image": "assets/products/Alightmotionprem.jpg",
+        "preview": "",
+        "file": "preset1.zip"
+    }
+]
