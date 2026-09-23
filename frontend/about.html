@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Kenali JayDreamStore, temukan jawaban pertanyaan umum, atau kirim pesan kepada kami."
+    >
+    <title>About Us | JaydreamStore</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="assets/logo.png" alt="Logo JayDreamStore">
+        <h2>JaydreamStore</h2>
+      </div>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="topup.html">Top Up</a></li>
+        <li><a href="about.html" aria-current="page">About Us</a></li>
+      </ul>
+
+      <button id="login-btn" type="button" onclick="location.href='login.html'">
+        Login
+      </button>
+    </nav>
+
+    <main>
+      <section class="hero about-hero">
+        <div class="hero-text">
+          <p class="section-label">Tentang Kami</p>
+          <h1>Tentang <span>JaydreamStore</span></h1>
+          <p>
+            JaydreamStore menyediakan produk digital untuk kebutuhan editor dan
+            gamer. Kami mengembangkan layanan secara bertahap agar informasi
+            produk dan proses pemesanan mudah dipahami.
+          </p>
+          <button type="button" onclick="location.href='#contact'">
+            Kirim Saran
+          </button>
+        </div>
+
+        <div class="hero-image">
+          <img src="assets/logo.png" alt="Identitas visual JayDreamStore">
+        </div>
+      </section>
+
+      <section class="faq-section" id="faq">
+        <div class="section-heading">
+          <p class="section-label">Pusat Bantuan</p>
+          <h2>Pertanyaan yang Sering Diajukan</h2>
+          <p>
+            Temukan jawaban singkat tentang produk, pemesanan, pembayaran, dan
+            bantuan pelanggan JayDreamStore.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary>
+              Apa itu JaydreamStore?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <p>
+              JaydreamStore adalah toko produk digital yang menyediakan kebutuhan
+              editor dan gamer. Layanan baru akan ditambahkan secara bertahap.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              Bagaimana cara melakukan pemesanan?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <p>
+              Pilih produk di halaman Store, baca detail produknya, lalu ikuti
+              tombol pemesanan yang tersedia. Pastikan data pesanan sudah benar
+              sebelum dikirim.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              Metode pembayaran apa yang tersedia?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <p>
+              Metode pembayaran akan ditampilkan pada halaman checkout saat
+              transaksi melalui website sudah tersedia. Jangan melakukan pembayaran
+              ke rekening atau akun yang tidak tercantum di kanal resmi.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              Kapan produk digital dikirim?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <p>
+              Waktu pengiriman mengikuti keterangan pada setiap produk. Pesanan
+              diproses setelah pembayaran berhasil dikonfirmasi.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              Apakah fitur Top Up sudah tersedia?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <p>
+              Fitur Top Up masih dalam tahap pengembangan. Informasi peluncurannya
+              akan diumumkan melalui website dan media sosial resmi JaydreamStore. Untuk Sementara Top Up Berjalan Melalui Whastapp secara Manual.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              Bagaimana jika pesanan saya mengalami masalah?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </summary>
+            <p>
+              Kirim pesan melalui formulir kontak di bawah dengan email yang aktif,
+              subjek yang jelas, dan detail masalah. Jangan pernah mengirim password
+              atau data pembayaran rahasia.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section class="category contact-section" id="contact">
+        <div class="section-heading">
+          <p class="section-label">Kontak</p>
+          <h2>Hubungi Kami</h2>
+          <p>
+            Punya pertanyaan atau saran? Isi formulir berikut dan kami akan
+            membalas melalui email.
+          </p>
+        </div>
+
+        <div class="auth-card contact-card">
+          <p class="contact-intro">
+            Pesan akan dikirim ke
+            <a href="mailto:official@jaydream.store">official@jaydream.store</a>.
+          </p>
+
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Nama</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                minlength="2"
+                maxlength="100"
+                autocomplete="name"
+                placeholder="Masukkan nama kamu"
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email balasan</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                maxlength="150"
+                autocomplete="email"
+                placeholder="nama@email.com"
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subjek</label>
+              <input
+                id="subject"
+                name="subject"
+                type="text"
+                minlength="3"
+                maxlength="150"
+                placeholder="Contoh: Pertanyaan tentang pesanan"
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="message">Pesan</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                minlength="10"
+                maxlength="3000"
+                placeholder="Tulis pertanyaan atau saran kamu di sini"
+                required
+              ></textarea>
+            </div>
+
+            <input
+              class="honeypot"
+              name="website"
+              type="text"
+              tabindex="-1"
+              autocomplete="off"
+              aria-hidden="true"
+            >
+
+            <p class="form-note">
+              Nama, email, dan pesan digunakan untuk menanggapi pertanyaanmu.
+              Jangan sertakan password atau data pembayaran.
+            </p>
+
+            <button type="submit">Kirim Pesan</button>
+          </form>
+
+          <p id="contact-status" role="status" aria-live="polite"></p>
+
+          <a class="email-link" href="mailto:official@jaydream.store">
+            Buka aplikasi email
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="copyright">© 2026 JaydreamStore</div>
+    </footer>
+
+    <script src="js/auth-config.js"></script>
+    <script src="js/auth-client.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/contact.js"></script>
+  </body>
+</html>

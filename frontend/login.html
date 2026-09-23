@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | JayDreamStore</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="auth-container">
+
+    <div class="auth-card">
+
+        <img src="assets/logo.png" class="auth-logo">
+
+        <h1>Selamat Datang</h1>
+
+        <p class="subtitle">
+            Login ke akun JayDreamStore
+        </p>
+<form id="account-form">
+
+        <input
+            type="email"
+            id="email" name="email" autocomplete="email" maxlength="150" required
+            placeholder="Masukkan Email">
+
+        <input
+            type="password"
+            id="password" name="password" autocomplete="current-password" maxlength="128"  required
+            placeholder="Masukkan Password">
+
+        <button type="submit">
+
+            Login
+
+        </button>
+</form>
+<p id="account-status" role="status" aria-live="polite"></p>
+
+        <p class="switch">
+
+            Belum punya akun?
+
+            <a href="register.html">
+
+                Daftar
+
+            </a>
+
+        </p>
+
+    </div>
+
+</div>
+
+<script src="js/auth-config.js"></script>
+<script src="js/auth-client.js"></script>
+<script src="js/login.js"></script>
+
+</body>
+
+</html>
