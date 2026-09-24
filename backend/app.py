@@ -13,7 +13,6 @@ import contact
 from payment import snap
 import time
 from email_service import send_product_email
-import os
 
 app = Flask(__name__)
 
