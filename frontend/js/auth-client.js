@@ -1,7 +1,7 @@
 (() => {
   'use strict';
   let csrf = '';
-  const base = window.JD_AUTH_API.replace(/\/$/, '');
+  const base = window.JD_AUTH_API ? window.JD_AUTH_API.replace(/\/$/, '') : '';
   async function request(path, options = {}) {
     const controller = new AbortController();
     const timer = setTimeout(() => controller.abort(), 15000);
@@ -34,4 +34,20 @@
       csrf = '';
     },
   };
+
+  // GLOBAL NAVBAR AUTH CHECKER
+  document.addEventListener('DOMContentLoaded', () => {
+      const authBtn = document.getElementById('nav-auth-btn');
+      if (authBtn) {
+          JDAuth.me().then(res => {
+              if (res && res.user) {
+                  authBtn.textContent = 'Dashboard';
+                  authBtn.onclick = () => { window.location.href = 'dashboard.html'; };
+              }
+          }).catch(() => {
+              authBtn.textContent = 'Login';
+              authBtn.onclick = () => { window.location.href = 'login.html'; };
+          });
+      }
+  });
 })();
