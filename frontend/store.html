@@ -1,122 +1,47 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Store | JaydreamStore</title>
-
     <link rel="stylesheet" href="css/style.css">
-
 </head>
-
 <body>
-
 <nav>
-
     <div class="logo">
-
         <img src="assets/logo.png" alt="JaydreamStore">
-
         <h2>JaydreamStore</h2>
-
     </div>
-
     <ul>
-
         <li><a href="index.html">Home</a></li>
         <li><a href="store.html">Store</a></li>
         <li><a href="topup.html">Top Up</a></li>
         <li><a href="about.html">About</a></li>
-
     </ul>
-
-    <button onclick="window.location.href='dashboard.html'">
-
-        Dashboard
-
-    </button>
-
+    <button id="nav-auth-btn" onclick="window.location.href='login.html'">Login</button>
 </nav>
-
 <section class="store">
-
     <div class="store-heading">
-
         <span class="section-label">JAYDREAMSTORE</span>
-
         <h1>Store</h1>
-
-        <p>
-            Pilih produk yang kamu butuhkan dari katalog kami.
-        </p>
-
+        <p>Pilih produk yang kamu butuhkan dari katalog kami.</p>
     </div>
-
     <div class="search-box">
-
-        <input
-            type="text"
-            id="search"
-            placeholder="Cari produk..."
-            autocomplete="off"
-            oninput="searchProduct()">
-
+        <input type="text" id="search" placeholder="Cari produk..." autocomplete="off" oninput="searchProduct()">
     </div>
-
     <div class="category-filter">
-
-        <button
-            type="button"
-            class="category-button active"
-            onclick="filterCategory('All')">
-            Semua
-        </button>
-
-        <button
-            type="button"
-            class="category-button"
-            onclick="filterCategory('Preset')">
-            Preset
-        </button>
-
-        <button
-            type="button"
-            class="category-button"
-            onclick="filterCategory('Premium')">
-            Premium
-        </button>
-
-        <button
-            type="button"
-            class="category-button"
-            onclick="filterCategory('Top Up')">
-            Top Up
-        </button>
-
+        <button type="button" class="category-button active" onclick="filterCategory('All')">Semua</button>
+        <button type="button" class="category-button" onclick="filterCategory('Preset')">Preset</button>
+        <button type="button" class="category-button" onclick="filterCategory('Premium')">Premium</button>
+        <button type="button" class="category-button" onclick="filterCategory('Top Up')">Top Up</button>
     </div>
-
-    <div id="products" class="product-grid">
-
-    </div>
-
+    <div id="products" class="product-grid"></div>
 </section>
-
 <footer>
-
-    <div class="copyright">
-
-        © 2026 JayDreamStore
-
-    </div>
-
+    <div class="copyright">© 2026 JayDreamStore</div>
 </footer>
-
+<script src="js/auth-config.js"></script>
+<script src="js/auth-client.js"></script>
 <script src="js/store.js"></script>
-
 </body>
-
 </html>
