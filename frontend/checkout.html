@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | JaydreamStore</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">
+        <img src="assets/logo.png">
+        <h2>JaydreamStore</h2>
+    </div>
+</nav>
+
+<section class="checkout">
+    <h1>Checkout</h1>
+    <div class="checkout-container">
+        
+        <div class="checkout-left">
+            <div class="product-box">
+                <img id="checkout-image">
+                <div>
+                    <h2 id="checkout-name">Memuat...</h2>
+                    <p id="checkout-category"></p>
+                    <h3 id="checkout-price"></h3>
+                    <p id="checkout-qty" style="color: #666; margin-top: 6px; font-weight: bold;"></p>
+                </div>
+            </div>
+
+            <!-- Email Box (Hidden for Top Up) -->
+            <div class="buyer-box" id="email-box">
+                <h2>Email Pengiriman :</h2>
+                <input type="email" id="email" placeholder="nama@email.com" required>
+                <small id="email-note" style="color: #666; display: block; margin-top: 8px;"></small>
+            </div>
+
+            <!-- QRIS Instructions (Hidden Initially) -->
+            <div id="qris-instructions" class="payment-box qris-box" style="display: none;">
+                <h2>Instruksi Pembayaran QRIS</h2>
+                <p>Transfer TEPAT sesuai nominal di bawah ini<br>(Termasuk 3 digit terakhir) agar terdeteksi otomatis.</p>
+                
+                <div class="qris-image-container">
+                    <img src="assets/products/Qris Jaydream.jpeg" alt="QRIS JaydreamStore" class="qris-image">
+                </div>
+                
+                <p id="qris-note" style="margin-top: 15px; font-weight: bold; color: #e74c3c; font-size: 14px;"></p>
+                
+                <p style="margin-top: 20px; font-size: 13px; color: #666;">*Sistem kami akan memverifikasi pembayaran secara otomatis. Jangan tutup halaman ini jika belum mentransfer.</p>
+            </div>
+        </div>
+
+        <div class="checkout-right">
+            <div class="summary">
+                <h2>Ringkasan</h2>
+                <div class="row">
+                    <span>Harga (<span id="summary-qty-count">1</span>x)</span>
+                    <span id="summary-price">Rp0</span>
+                </div>
+                <div class="row" id="row-kode-unik" style="display: none;">
+                    <span>Kode Unik</span>
+                    <span id="summary-unique-code" style="color: #f59e0b; font-weight: bold;">+ Rp0</span>
+                </div>
+                <hr>
+                <div class="row total">
+                    <span>Total Pembayaran</span>
+                    <span id="summary-total">Rp0</span>
+                </div>
+                
+                <button id="pay-button" style="transition: all 0.3s ease;">
+                    Memproses...
+                </button>
+                
+                <button id="confirm-qris-btn" style="display: none; background: #27ae60; margin-top: 12px; transition: all 0.3s ease;">
+                    Saya Sudah Transfer
+                </button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<script src="js/checkout.js"></script>
+</body>
+</html>

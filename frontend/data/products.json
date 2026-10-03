@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "name": "Gotoubun No Katachi - Edit",
+    "price": 10000,
+    "category": "Preset",
+    "image": "assets/products/presetgotoubunkatachi.jpeg",
+    "preview": "assets/previews/gotoubunnokatachi.mp4",
+    "file": "preset1.zip"
+  },
+  {
+    "id": 2,
+    "name": "CapCut Pro",
+    "price": 15000,
+    "category": "Premium",
+    "image": "assets/products/Capcutpro.jpg",
+    "preview": "",
+    "file": "preset1.zip"
+  },
+  {
+    "id": 3,
+    "name": "Alight Motion Premium/1 Tahun",
+    "price": 5000,
+    "category": "Premium",
+    "image": "assets/products/Alightmotionprem.jpg",
+    "preview": "",
+    "file": "preset1.zip"
+  },
+  {
+    "id": 4,
+    "name": "Weekly Diamond Pass MLBB x1",
+    "price": 31500,
+    "category": "Top Up",
+    "image": "assets/products/wdp.jpg",
+    "preview": "",
+    "file": ""
+  },
+  {
+    "id": 5,
+    "name": "Weekly Diamond Pass MLBB x3",
+    "price": 91000,
+    "category": "Top Up",
+    "image": "assets/products/wdp.jpg",
+    "preview": "",
+    "file": ""
+  },
+  {
+    "id": 6,
+    "name": "5 Diamond MLBB",
+    "price": 2000,
+    "category": "Top Up",
+    "image": "assets/products/diamond1.jpg",
+    "preview": "",
+    "file": ""
+  },
+  {
+    "id": 7,
+    "name": "10 Diamond MLBB",
+    "price": 3500,
+    "category": "Top Up",
+    "image": "assets/products/diamond1.jpg",
+    "preview": "",
+    "file": ""
+  },
+  {
+    "id": 8,
+    "name": "50 Diamond MLBB + 4 Bonus",
+    "price": 16000,
+    "category": "Top Up",
+    "image": "assets/products/diamond2.jpg",
+    "preview": "",
+    "file": ""
+  },
+  {
+    "id": 9,
+    "name": "110 Diamond MLBB + 10 Bonus",
+    "price": 32000,
+    "category": "Top Up",
+    "image": "assets/products/diamond2.jpg",
+    "preview": "",
+    "file": ""
+  },
+  {
+    "id": 10,
+    "name": "250 Diamond MLBB + 7 Bonus",
+    "price": 73000,
+    "category": "Top Up",
+    "image": "assets/products/diamond2.jpg",
+    "preview": "",
+    "file": ""
+  },
+  {
+    "id": 11,
+    "name": "280 Diamond MLBB + 21 Bonus",
+    "price": 84000,
+    "category": "Top Up",
+    "image": "assets/products/diamond2.jpg",
+    "preview": "",
+    "file": ""
+  },
+  {
+    "id": 12,
+    "name": "400 Diamond MLBB + 8 Bonus",
+    "price": 120000,
+    "category": "Top Up",
+    "image": "assets/products/diamond2.jpg",
+    "preview": "",
+    "file": ""
+  },
+  {
+    "id": 13,
+    "name": "500 Diamond MLBB + 12 Bonus",
+    "price": 145000,
+    "category": "Top Up",
+    "image": "assets/products/diamond3.jpg",
+    "preview": "",
+    "file": ""
+  },
+  {
+    "id": 14,
+    "name": "1000 Diamond MLBB + 50 Bonus",
+    "price": 290000,
+    "category": "Top Up",
+    "image": "assets/products/diamond3.jpg",
+    "preview": "",
+    "file": ""
+  },
+  {
+    "id": 15,
+    "name": "First Top Up 50 + 50 Diamond MLBB",
+    "price": 16000,
+    "category": "Top Up",
+    "image": "assets/products/diamond2.jpg",
+    "preview": "",
+    "file": ""
+  },
+  {
+    "id": 16,
+    "name": "First Top Up 150 + 150 Diamond MLBB",
+    "price": 46000,
+    "category": "Top Up",
+    "image": "assets/products/diamond2.jpg",
+    "preview": "",
+    "file": ""
+  },
+  {
+    "id": 17,
+    "name": "First Top Up 250 + 250 Diamond MLBB",
+    "price": 76000,
+    "category": "Top Up",
+    "image": "assets/products/diamond3.jpg",
+    "preview": "",
+    "file": ""
+  },
+  {
+    "id": 18,
+    "name": "First Top Up 500 + 500 Diamond MLBB",
+    "price": 155000,
+    "category": "Top Up",
+    "image": "assets/products/diamond3.jpg",
+    "preview": "",
+    "file": ""
+  },
+  {
+    "id": 19,
+    "name": "Weekly Elite Bundle MLBB",
+    "price": 16000,
+    "category": "Top Up",
+    "image": "assets/products/weekdiamond.png",
+    "preview": "",
+    "file": ""
+  },
+  {
+    "id": 20,
+    "name": "Monthly Epic Bundle MLBB",
+    "price": 78000,
+    "category": "Top Up",
+    "image": "assets/products/monthmlbb.webp",
+    "preview": "",
+    "file": ""
+  }
+]

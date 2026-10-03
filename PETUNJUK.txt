@@ -1,0 +1,60 @@
+JAYDREAMSTORE: LOGIN + ABOUT US + TOP UP COMING SOON
+
+Struktur backend/ dan frontend/ tetap sama. css/style.css serta seluruh aset
+tidak diubah. Login/register/dashboard menggunakan markup dan class aslinya.
+
+LANGKAH LOKAL
+1. Backup proyek dan database lama. Jangan menimpa database hosting.
+2. Masuk backend, install: python -m pip install -r requirements.txt
+3. Salin .env.example ke .env. Isi AUTH_SECRET_KEY dengan hasil perintah:
+   python -c "import secrets; print(secrets.token_hex(32))"
+4. Isi EMAIL_PASSWORD dengan password mailbox Hostinger. Jangan kirim nilainya.
+5. Jalankan: python -m flask --app app auth-init-db
+6. Jalankan: python -m flask --app app run --host localhost --port 5000
+7. Terminal lain, masuk frontend: python -m http.server 5500 --bind localhost
+8. Buka http://localhost:5500/index.html. Gunakan localhost secara konsisten.
+
+HOSTING
+Frontend saja tidak menjalankan Flask. Atur frontend/js/auth-config.js agar
+origin production mengarah ke backend HTTPS yang benar, misalnya subdomain
+API milikmu yang sudah dikonfigurasi. Default location.origin hanya bekerja
+jika route backend dilayani pada domain frontend yang sama.
+Gunakan APP_ENV=production, AUTH_SECRET_KEY acak, AUTH_ALLOWED_ORIGINS sesuai
+domain frontend HTTPS dan AUTH_RATE_STORAGE berupa Redis bersama.
+Cookie Lax memerlukan frontend/backend satu situs, misalnya jaydream.store
+dan api.jaydream.store. Jangan menonaktifkan CSRF untuk mengatasi cookie.
+Pakai WSGI production server, debug mati, database persisten, dan backup.
+
+EMAIL
+Form About Us mengirim melalui backend ke official@jaydream.store dengan
+Reply-To pengunjung. SMTP Hostinger SSL port 465. Error tampil jika SMTP
+gagal, bukan pesan sukses palsu. Koneksi SMTP tidak dijalankan saat import.
+Belum ada email asli dikirim selama pengujian. Pengiriman asli memerlukan
+password mailbox dan akses SMTP dari hosting.
+
+AKUN
+JWT HttpOnly, Secure saat production, CSRF, sesi 8 jam dan pencabutan token
+di database saat logout. Akun lama memakai kolom hash password yang sama.
+Role tersimpan pada tabel tambahan. Register tidak menerima role admin.
+Dashboard memeriksa /me. Angka statistik lama tetap tampilan placeholder,
+bukan data saldo/pesanan nyata. Histori pesanan belum diintegrasikan.
+
+PEMBAYARAN
+Kode pembayaran lama tetap ada tetapi endpoint pembayaran/webhook/download
+dinonaktifkan secara default (PAYMENTS_ENABLED=false). Unggahan masih memiliki
+webhook tanpa verifikasi dan harga dari browser. Jangan aktifkan pembayaran
+sebelum perbaikan fase transaksi. Checkout JS lama bukan bagian login baru.
+Top Up hanya halaman Coming Soon dan tidak menerima pesanan top up.
+
+ISI ARSIP
+.env rahasia dan __pycache__ tidak disertakan. Gunakan .env.example.
+Database asli disertakan tanpa perubahan untuk menjaga akun/datamu. Database
+berisi data privat: jangan upload backend/instance ke GitHub atau web publik.
+File ZIP produk kosong di unggahan tetap dipertahankan, belum siap dikirim.
+File asli pengguna tidak dihapus. Hasil ini adalah salinan baru.
+
+TES
+python -m pytest tests -q
+Pengujian memakai database sementara dan SMTP palsu, tanpa transaksi nyata.
+Setelah deploy, tes cookie/login/logout, refresh/back, pesan About Us,
+dan tampilan HP. Belum ada deployment ke GitHub/hosting dari paket ini.
