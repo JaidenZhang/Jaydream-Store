@@ -20,7 +20,7 @@ document.getElementById('contact-form').addEventListener('submit', async event =
     };
 
     // TODO: GANTI URL INI DENGAN URL WEB APP GOOGLE APPS SCRIPT KAMU
-    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwCBhd9uwjxrK51Sd7X3XylAkTVLD9uNaLRy0agE1DZCELINOfQIxB0ME0j31Yly0NyAA/exec";
+    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbycO-ZqWUKI5EFkGo0WjXqCEIWOLUHLAFhGmr7T40JIzuzD0lzN_L9uBB60J_7kFAeoSQ/exec";
 
     try {
         if (SCRIPT_URL === "PASTE_URL_WEB_APP_GOOGLE_SCRIPT_CONTACT_DI_SINI") {
